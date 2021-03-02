@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Logistics &mdash; Colorlib Website Template</title>
+    <title>Software Evolution Dataset</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -51,17 +51,12 @@
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="#section-home" class="nav-link">Home</a></li>
-                <li class="has-children">
-                  <a href="#section-about" class="nav-link">About the Dataset</a>
-                  <ul class="dropdown">
-                    <li><a href="#section-how-it-works" class="nav-link">Systems</a></li>
-                    <li><a href="#section-our-team" class="nav-link">Metrics</a></li>
-                  </ul>
-                </li>
-                <li><a href="#section-services" class="nav-link">Data</a></li>
+                <li><a href="#section-about" class="nav-link">About the Dataset</a></li>
+                <li><a href="#section-data" class="nav-link">Data</a></li>
+                <li><a href="#section-metrics" class="nav-link">Metrics</a></li>
                 <li><a href="#section-references" class="nav-link">References</a></li>
-                <li><a href="#section-blog" class="nav-link">Blog</a></li>
-                <li><a href="#section-contact" class="nav-link">Contact</a></li>
+                <li><a href="#section-the-authors" class="nav-link">The Authors</a></li>
+                <!-- <li><a href="#section-contact" class="nav-link">Contact</a></li> -->
               </ul>
             </nav>
           </div>
@@ -86,8 +81,6 @@
             
 
             <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">Creation and Evaluation of a Time Series-Based Dataset for Open-Source Systems</h1>
-            <!-- <p class="mb-5" data-aos="fade-up" data-aos-delay="100">A Logistics Company</p> -->
-            <!-- <p data-aos="fade-up" data-aos-delay="200"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">Get Started!</a></p> -->
 
           </div>
         </div>
@@ -96,222 +89,1274 @@
 
     <div class="site-section" id="section-about">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row">
           
-          <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade-up" data-aos-delay="100">
             <img src="images/img_3.jpg" alt="Image" class="img-fluid rounded">
-          </div>
-          <div class="col-md-6 order-md-1" data-aos="fade-up">
+          </div> -->
+          <div class="col-md-12 order-md-1" data-aos="fade-up">
             <div class="text-left pb-1 border-primary mb-4">
-              <h2 class="text-primary">About Us</h2>
+              <h2 class="text-primary">About the Dataset</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
-            <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
-            
-            <ul class="ul-check list-unstyled success">
-              <li>Error minus sint nobis dolor</li>
-              <li>Voluptatum porro expedita labore esse</li>
-              <li>Voluptas unde sit pariatur earum</li>
-            </ul>
+
+            <p class="mb-2">This website refers to comprehensive software evolution dataset with temporal information of 47 static software metrics of 52 open-source Java systems. This dataset was created for the purpose of supporting the researchers in carrying out empirical studies on software evolution.</p>
+
+            <p class="mb-5">The time series extracted to the systems metrics are kept in <i>CSV</i> files. Each <i>CSV</i> file refers to a particular metric from a given system. The lines of the file refer to the system's classes, while the columns refer consist of the system's releases. Therefore, a cell <i>(c,r)</i> in this file has the value of a particuar metric collected for the class <i>c</i> in the release <i>r</i> of a specific system.</p>
+
+            <h4 class="text-left pb-1 mb-2 font-weight-bold">Extraction Process</h4>
+
+            <p class="mb-5">The extraction process of this dataset was performed following a methodology of four steps. The first step determined the selection criterion, i.e., the aspects considered relevant to choose the systems. The second step consisted of making releases of the systems' source code. A release in the context of this dataset consists of a bi-week period. The third step collected the static metrics from the systems' releases, and the fourth step generated the time series.</p>
             
           </div>
           
         </div>
       </div>
     </div>
-  
-    <div class="site-section bg-image overlay" style="background-image: url('images/hero_bg_4.jpg');" id="section-how-it-works">
+
+
+    <div class="site-section bg-light" id="section-data">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary" data-aos="fade">How It Works</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <div class="how-it-work-item">
-              <span class="number">1</span>
-              <div class="how-it-work-body">
-                <h2>Make An Order</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
-                <ul class="ul-check list-unstyled success">
-                  <li class="text-white">Error minus sint nobis dolor</li>
-                  <li class="text-white">Voluptatum porro expedita labore esse</li>
-                  <li class="text-white">Voluptas unde sit pariatur earum</li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <div class="how-it-work-item">
-              <span class="number">2</span>
-              <div class="how-it-work-body">
-                <h2>Make A Payment</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
-                <ul class="ul-check list-unstyled success">
-                  <li class="text-white">Error minus sint nobis dolor</li>
-                  <li class="text-white">Voluptatum porro expedita labore esse</li>
-                  <li class="text-white">Voluptas unde sit pariatur earum</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <div class="how-it-work-item">
-              <span class="number">3</span>
-              <div class="how-it-work-body">
-                <h2>Track Your Order</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
-                <ul class="ul-check list-unstyled success">
-                  <li class="text-white">Error minus sint nobis dolor</li>
-                  <li class="text-white">Voluptatum porro expedita labore esse</li>
-                  <li class="text-white">Voluptas unde sit pariatur earum</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section border-bottom" id="section-our-team">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary" data-aos="fade">Our Team</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <div class="person">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
-              <h3>Christine Rooster</h3>
-              <p class="position text-muted">Co-Founder, President</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <div class="person">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
-              <h3>Brandon Sharp</h3>
-              <p class="position text-muted">Co-Founder, COO</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <div class="person">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
-              <h3>Connor Hodson</h3>
-              <p class="position text-muted">Marketing</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="site-section bg-light" id="section-services">
-      <div class="container">
         <div class="row justify-content-center mb-5" data-aos="fade-up">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="mb-0 text-primary">Our Services</h2>
-            <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p>
+            <h2 class="mb-0 text-primary">Data</h2>
+            <p class="color-black-opacity-5">The systems above composes the dataset and you can make the download of their time series by pressing the download button.</p>
           </div>
         </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div>
-              <div>
-                <h3>Air Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+
+        <div class="slide-one-item home-slider owl-carousel">
+
+          <!-- box1 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="https://github.com/real-logic/aeron" target="_blank">Aeron</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 166</small><br/>
+                      <small>Timeframe: 2014-02-07 - 2020-12-01</small></p>
+                      <p><a href="https://drive.google.com/file/d/1vZuZi5W0zdP98kx2GH3CrjPxzgca81K3/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/Alluxio/alluxio" target="_blank">Alluxio</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 194</small><br/>
+                      <small>Timeframe: 2012-12-21 - 2020-12-08</small></p>
+                      <p><a href="https://drive.google.com/file/d/1KNjEqAxx2yiMtiJRRCLOdS-Zs3FYTev9/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/AntennaPod/AntennaPod" target="_blank">AntennaPod</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 218</small><br/>
+                      <small>Timeframe: 2011-12-23 - 2020-12-04</small></p>
+                      <p><a href="https://drive.google.com/file/d/1HrZexV6hksBPmNF-QH6okm20lznQcVH4/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/antlr/antlr4" target="_blank">Antlr4</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 264</small><br/>
+                      <small>Timeframe: 2010-01-28 - 2020-11-30</small></p>
+                      <p><a href="https://drive.google.com/file/d/16D0ZhznCajy8-wyqOpAblw5ruy6IFTT0/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/arduino/Arduino" target="_blank">Arduino</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 372</small><br/>
+                      <small>Timeframe: 2005-08-25 - 2020-12-03</small></p>
+                      <p><a href="https://drive.google.com/file/d/1ceejSGiQ6HEgBOPoaSgqhryDswMzThQS/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/bazelbuild/bazel" target="_blank">Bazel</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 141</small><br/>
+                      <small>Timeframe: 2015-02-25 - 2020-12-09</small></p>
+                      <p><a href="https://drive.google.com/file/d/1u8lXQIPZT3q6CrBTtZosEtR6ONVCc19D/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div>
-              <div>
-                <h3>Ocean Freight</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div>
-              <div>
-                <h3>Land Transportation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
+
           </div>
 
 
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div>
-              <div>
-                <h3>Warehousing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+          <!-- box2 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/bisq-network/bisq" target="_blank">Bisq</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 164</small><br/>
+                      <small>Timeframe: 2014-03-12 - 2020-12-04</small></p>
+                      <p><a href="https://drive.google.com/file/d/1QnlxSGxd0mi07hrnDUxnHOQHThHwHXgf/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/facebook/buck" target="_blank">Buck</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 184</small><br/>
+                      <small>Timeframe: 2013-04-18 - 2020-11-06</small></p>
+                      <p><a href="https://drive.google.com/file/d/1y-iqFrUnkOgbOJ6ZgisDRL83kwFhK_3c/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/apereo/cas" target="_blank">Cas</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 252</small><br/>
+                      <small>Timeframe: 2010-07-22 - 2020-11-25</small></p>
+                      <p><a href="https://drive.google.com/file/d/1RIsqfiQrlfeoRmNIdBzfI1ZE7cGR8tms/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/stanfordnlp/CoreNLP" target="_blank">CoreNLP</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 180</small><br/>
+                      <small>Timeframe: 2013-06-27 - 2020-11-16</small></p>
+                      <p><a href="https://drive.google.com/file/d/1IkI86wBIvhCKlL-PG9R3lumob-YarQCG/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/dbeaver/dbeaver" target="_blank">Dbeaver</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 199</small><br/>
+                      <small>Timeframe: 2012-10-03 - 2020-12-04</small></p>
+                      <p><a href="https://drive.google.com/file/d/1ccsQmkhwGoffvpY4xetXdXpZ4XBS-QWN/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/dropwizard/dropwizard" target="_blank">Dropwizard</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 233</small><br/>
+                      <small>Timeframe: 2011-05-10 - 2020-12-02</small></p>
+                      <p><a href="https://drive.google.com/file/d/1GkF3LWfNzGIvYZALRYgiEuW8-uCt_ol0/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
             </div>
+
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div>
-              <div>
-                <h3>Storage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+
+
+          <!-- box3 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/alibaba/druid" target="_blank">Druid</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 232</small><br/>
+                      <small>Timeframe: 2011-05-11 - 2020-11-18</small></p>
+                      <p><a href="https://drive.google.com/file/d/1673X958DPt-ojxiayyOx951KL8islq1t/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/eclipse/eclipse.jdt.core" target="_blank">Eclipse JDT Core</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 473</small><br/>
+                      <small>Timeframe: 2001-06-05 - 2020-11-06</small></p>
+                      <p><a href="https://drive.google.com/file/d/1uR9muOCOdgo4VLR_xfZfk91I8-9wp4h8/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/eclipse/eclipse.pde.ui" target="_blank">Eclipse PDE UI</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 474</small><br/>
+                      <small>Timeframe: 2001-05-24 - 2020-11-09</small></p>
+                      <p><a href="https://drive.google.com/file/d/14dRtKQzzdxi7jG0V7HCKxitGidXI58j0/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/elastic/elasticsearch" target="_blank">Elasticsearch</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 262</small><br/>
+                      <small>Timeframe: 2010-02-08 - 2020-11-11</small></p>
+                      <p><a href="https://drive.google.com/file/d/19Ruwo97dFwkxF3Fy8HIog0M446sy_bLI/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/google/ExoPlayer" target="_blank">ExoPlayer</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 157</small><br/>
+                      <small>Timeframe: 2014-06-16 -- 2020-11-25</small></p>
+                      <p><a href="https://drive.google.com/file/d/1yMcywrTQCa_aszbI9oHfuFei54lXQbpx/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/TechEmpower/FrameworkBenchmarks" target="_blank">Framework Bechmarks</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 187</small><br/>
+                      <small>Timeframe: 2013-03-22 - 2020-11-24</small></p>
+                      <p><a href="https://drive.google.com/file/d/18CFAT0YJsJECWVzx1dcKnqx2aHZMBt5J/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
             </div>
+
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div>
-              <div>
-                <h3>Worldwide Delivery</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+
+
+          <!-- box4 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/gocd/gocd" target="_blank">Gocd</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 170</small><br/>
+                      <small>Timeframe: 2013-12-13 - 2020-12-05</small></p>
+                      <p><a href="https://drive.google.com/file/d/1cy8gKsUr8AiRZSAju1HelEtdgQIkEtfL/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/Graylog2/graylog2-server" target="_blank">Graylog</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 257</small><br/>
+                      <small>Timeframe: 2010-05-17 - 2020-12-04</small></p>
+                      <p><a href="https://drive.google.com/file/d/1Q8es_y5rUfvIHZJlCMjdE6kIRuo04O6f/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/google/guava" target="_blank">Guava</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 278</small><br/>
+                      <small>Timeframe: 2009-06-18 - 2020-11-16</small></p>
+                      <p><a href="https://drive.google.com/file/d/1TnpnyIRl-GnZsuxpQVTfdzZ5qjmi1ulS/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/hibernate/hibernate-orm" target="_blank">Hibernate Orm</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 326</small><br/>
+                      <small>Timeframe: 2007-06-29 - 2020-11-16</small></p>
+                      <p><a href="https://drive.google.com/file/d/1U1YfTIALrTAc7UPuca-sKA2s7Dctadt5/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/google/j2objc" target="_blank">J2objc</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 201</small><br/>
+                      <small>Timeframe: 2012-09-05 - 2020-12-06</small></p>
+                      <p><a href="https://drive.google.com/file/d/1yAuAh35MSkzG1FVcS1FKWO8TWfnYWWMM/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/JabRef/jabref" target="_blank">Jabref</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 418</small><br/>
+                      <small>Timeframe: 2003-10-14 - 2020-12-12</small></p>
+                      <p><a href="https://drive.google.com/file/d/1dtT6K009t8B2D-77E8P7TREnyjnW5LS9/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
             </div>
+
           </div>
+
+
+          <!-- box5 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/jenkinsci/jenkins" target="_blank">Jenkins</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 342</small><br/>
+                      <small>Timeframe: 2006-11-05 - 2020-11-20</small></p>
+                      <p><a href="https://drive.google.com/file/d/13da7q2y2yV9YCak-JN6ZuhixLVI3N3PC/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/jitsi/jitsi" target="_blank">Jitsi</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 371</small><br/>
+                      <small>Timeframe: 2005-07-21 - 2020-10-14</small></p>
+                      <p><a href="https://drive.google.com/file/d/16fZbcEVHg9mwXLADNV1K9JzX_10iDGIG/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/apache/jmeter" target="_blank">Jmeter</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 542</small><br/>
+                      <small>Timeframe: 1998-09-03 -- 2020-12-05</small></p>
+                      <p><a href="https://drive.google.com/file/d/1n2OT7GUSy7_5t5VmlVzwfcA9922z06_C/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/junit-team/junit5" target="_blank">Junit 5</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 134</small><br/>
+                      <small>Timeframe: 2015-06-04 - 2020-12-03</small></p>
+                      <p><a href="https://drive.google.com/file/d/1rWZdjx3pRUWjIkM7j0T7ZKyvnq1vX0pE/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/k9mail/k-9" target="_blank">K-9 Mail</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 293</small><br/>
+                      <small>Timeframe: 2008-10-28 - 2020-11-08</small></p>
+                      <p><a href="https://drive.google.com/file/d/1GKaOvZlbWXlnVwy-IthiuyrU9fo3BbSJ/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/apache/kafka" target="_blank">Kafka</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 227</small><br/>
+                      <small>Timeframe: 2011-08-01 -- 2020-11-25</small></p>
+                      <p><a href="https://drive.google.com/file/d/1BJspNBkcDOy5hvzaneg85svaDMftCmVX/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box6 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/keycloak/keycloak" target="_blank">Keycloak</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 181</small><br/>
+                      <small>Timeframe: 2013-07-02 - 2020-12-06</small></p>
+                      <p><a href="https://drive.google.com/file/d/1HOZv3-aBBX_PP0OqI7vcsLVxmZe1JOAA/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/languagetool-org/languagetool" target="_blank">LanguageTool</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 428</small><br/>
+                      <small>Timeframe: 2003-05-19 - 2020-12-14</small></p>
+                      <p><a href="https://drive.google.com/file/d/1wYaeHEG4BnvjsnpXPoRlZCgERINF3zbv/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/apache/lucene-solr" target="_blank">Lucene Solr</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 467</small><br/>
+                      <small>Timeframe: 2001-09-11 - 2020-11-14</small></p>
+                      <p><a href="https://drive.google.com/file/d/1FwZtF3kGNZOdffvs4kY3t1t2tqIoBd62/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/MinecraftForge/MinecraftForge" target="_blank">MinecraftForge</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 229</small><br/>
+                      <small>Timeframe: 2011-07-12 - 2020-12-05</small></p>
+                      <p><a href="https://drive.google.com/file/d/1D7yMEmPh-8kgpu-xh6D95k6Gz5daNsXr/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/neo4j/neo4j" target="_blank">Neo4j</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 329</small><br/>
+                      <small>Timeframe: 2007-05-24 - 2020-11-25</small></p>
+                      <p><a href="https://drive.google.com/file/d/1XKMPKR-5jN39YLhCbXMgzC6UHczsUr7K/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/netty/netty" target="_blank">Netty</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 229</small><br/>
+                      <small>Timeframe: 2008-08-08 - 2020-11-17</small></p>
+                      <p><a href="https://drive.google.com/file/d/1xVY519LsEixxY49H2kY2enE6umaJZuya/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box7 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/OpenRefine/OpenRefine" target="_blank">OpenRefine</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 258</small><br/>
+                      <small>Timeframe: 2010-04-26 - 2020-11-28</small></p>
+                      <p><a href="https://drive.google.com/file/d/117APlD0oXDAvA7yuqQPhCeG1anmR6HUD/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/orientechnologies/orientdb" target="_blank">OrientDB</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 260</small><br/>
+                      <small>Timeframe: 2010-03-29 - 2020-11-30</small></p>
+                      <p><a href="https://drive.google.com/file/d/1N8NTxSdsbzd4pH0cvdmfPzGlpqHZWNYX/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/pentaho/pentaho-kettle" target="_blank">Pentaho Kettle</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 366</small><br/>
+                      <small>Timeframe: 2005-11-07 - 2020-11-17</small></p>
+                      <p><a href="https://drive.google.com/file/d/19BitcFIPfSmnAGtm3sJCNofKtWCR2tZ4/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/pentaho/pentaho-platform" target="_blank">Pentaho Platform</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 223</small><br/>
+                      <small>Timeframe: 2011-09-21 - 2020-11-16</small></p>
+                      <p><a href="https://drive.google.com/file/d/1JZ6pIxFh71QBWtEA8tg6DzOqnxX9Lf_x/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/pinpoint-apm/pinpoint" target="_blank">Pinpoint</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 206</small><br/>
+                      <small>Timeframe: 2012-06-19 - 2020-12-03</small></p>
+                      <p><a href="https://drive.google.com/file/d/1aJ6g2CySMUotOC_cUwwc4M6RqfsZzCmr/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/pmd/pmd" target="_blank">PMD</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 449</small><br/>
+                      <small>Timeframe: 2002-06-21 - 2020-11-27</small></p>
+                      <p><a href="https://drive.google.com/file/d/1OGwib2-pANfdMSvVBkHShFb4SJwawpZ7/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box8 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/realm/realm-java" target="_blank">Realm Java</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 210</small><br/>
+                      <small>Timeframe: 2012-04-20 - 2020-12-03</small></p>
+                      <p><a href="https://drive.google.com/file/d/1tfule6d_QKcOkaGedKKlQ-mBnhpWXFZE/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/eclipse/rt.equinox.framework" target="_blank">RT Equinox Framework</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 414</small><br/>
+                      <small>Timeframe: 2003-11-25 - 2020-11-24</small></p>
+                      <p><a href="https://drive.google.com/file/d/1tfule6d_QKcOkaGedKKlQ-mBnhpWXFZE/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/ReactiveX/RxJava" target="_blank">RxJava</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 211</small><br/>
+                      <small>Timeframe: 2012-03-18 - 2020-11-15</small></p>
+                      <p><a href="https://drive.google.com/file/d/1OCBQEptxe5XDlOhZZe7Y1SA1-eCsB8-t/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/SonarSource/sonarqube" target="_blank">SonarQube</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 249</small><br/>
+                      <small>Timeframe: 2010-09-06 - 2020-11-26</small></p>
+                      <p><a href="https://drive.google.com/file/d/13Cb__yVAway1WCJ8rzJJSQd67KVZkZVt/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/spring-projects/spring-boot" target="_blank">Spring Boot</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 197</small><br/>
+                      <small>Timeframe: 2012-10-21 - 2020-11-22</small></p>
+                      <p><a href="https://drive.google.com/file/d/1vWS1j-ceoNldUhsm6tfI5Mu_CRpe7ELU/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/spring-projects/spring-framework" target="_blank">Spring Framework</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 301</small><br/>
+                      <small>Timeframe: 2008-07-10 - 2020-11-18</small></p>
+                      <p><a href="https://drive.google.com/file/d/16gkV5Q-zTx8P2vPu0Dv6faVkTZOXLALP/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box9 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/spring-projects/spring-security" target="_blank">Spring Security</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 407</small><br/>
+                      <small>Timeframe: 2004-03-16 - 2020-12-01</small></p>
+                      <p><a href="https://drive.google.com/file/d/1qeL2WO4Jfp2-h6SN-FmJ6RxbuKdrKmUn/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/apache/tomcat" target="_blank">Tomcat</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 358</small><br/>
+                      <small>Timeframe: 2006-03-27 - 2020-12-07</small></p>
+                      <p><a href="https://drive.google.com/file/d/1gk-Mn6vrvLyOFFQQmesmmqO_z5WBA9J-/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/eugenp/tutorials" target="_blank">Turorials</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 184</small><br/>
+                      <small>Timeframe: 2013-04-29 - 2020-11-17</small></p>
+                      <p><a href="https://drive.google.com/file/d/16jIkKvV1Mfux6Xoj0lylfbYgxQzbpIhX/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <!-- <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div> -->
+                    <div>
+                      <h3><a href="https://github.com/zaproxy/zaproxy" target="_blank">Zaproxy</a></h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at. <hr/>
+                      <small>Nº of releases: 251</small><br/>
+                      <small>Timeframe: 2010-08-16 - 2020-12-05</small></p>
+                      <p><a href="https://drive.google.com/file/d/1SdcOwlxnmtCTPKMJAGYDZGO7fLQUxKLg/view?usp=sharing" target="_blank">Download</a></p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+        
+          
 
         </div>
+
+
+
+
+        
       </div>
     </div>
 
-    
+
+
+    <div class="site-section" id="section-metrics">
+      <div class="container">
+
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <div class="col-md-7 text-center border-primary">
+            <h2 class="mb-0 text-primary">Software Metrics</h2>
+            <p class="color-black-opacity-5">The metrics above are the ones considered during the creation of the dataset.</p>
+          </div>
+        </div>
+
+        <div class="slide-one-item home-slider owl-carousel">
+
+          <!-- box1 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Abstract Methods (abstractMethodsQty)</a></h3>
+                      <p>It computes the number of methods with the abstract modifiers present in a class.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Anonymous Classes (anonymousClassesQty)</a></h3>
+                      <p>It counts the number of anonymous classes present in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Assignments (assignmentsQty)</a></h3>
+                      <p>It computes the number of assignments in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Coupling Between Objects (cbo)</a></h3>
+                      <p>It Counts the number of dependencies a class has.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Comparisons (comparisonsQty)</a></h3>
+                      <p>It computes the number of comparisons ("==" and "!=" comparators) in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Default Fields (defaultFieldsQty)</a></h3>
+                      <p>It counts the number of default fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box2 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Default Methods (defaultMethodsQty)</a></h3>
+                      <p>It counts the number of default methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Depth of Inheritance Tree(dit)</a></h3>
+                      <p> It indicates the level in which a class is positioned in an inheritance hierarchy. The position of a class is the distance between its current position and the root of its inheritance tree.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Fanin (fanin)</a></h3>
+                      <p>It measures the number of classes that reference a particular class.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Fanout (fanout)</a></h3>
+                      <p>It computes the number of other classes referenced by a specific class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Final Fields (finalFieldsQty)</a></h3>
+                      <p>It counts the number of final fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Final Methods (finalMethodsQty)</a></h3>
+                      <p>It counts the number of final methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box3 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Inner Classes (innerClassesQty)</a></h3>
+                      <p>It counts the number of inner classes present in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Lambda Expressions (lambdasQty)</a></h3>
+                      <p>It counts the number of lambda expressions present in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Loose Class Cohesion (lcc)</a></h3>
+                      <p>It measures the cohesion of a class via direct and indirect connections between visible classes for the cohesion calculation.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Lack of Cohesion of Methods (lcom)</a></h3>
+                      <p>It measures the cohesion of a class by using the notion of similarity its internal methods. This metric's value is between 0 and 1. The lower the value of LCOM, the more cohesive the class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Lines of Code (loc)</a></h3>
+                      <p>It counts the lines of count, ignoring empty lines and comments in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Log Statements (logStatementsQty)</a></h3>
+                      <p>It counts the number of log statements in the source code of the classes.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box4 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Loops(loopQty)</a></h3>
+                      <p>It counts the number of loops (for, while, do while, enhanced for) present in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Math Operations (mathOperationsQty)</a></h3>
+                      <p>It measures the number of math operations (times, divide, remainder, plus, minus, left shit, right shift) existing in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Max nested blocks(maxNestedBlocksQty)</a></h3>
+                      <p>It measures the highest number of blocks nested together in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Modifiers (modifiers)</a></h3>
+                      <p>It measures the number of modifiers (public, abstract, private, protected, and native) present in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Children (noc)</a></h3>
+                      <p>It measures the number of immediate subclasses of a particular class in an inheritance hierarchy.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of static invocations (nosi)</a></h3>
+                      <p>It counts the number of invocations to static methods.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box5 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Number (numbersQty)</a></h3>
+                      <p>It counts the number of numbers (int, long, double, float) literals in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Parenthesized Expressions (parenthesizedExpsQty)</a></h3>
+                      <p>It measures the number of expressions inside parenthesis.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Private Fields (privateFieldsQty)</a></h3>
+                      <p>It counts the number of private fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Private Methods (privateMethodsQty)</a></h3>
+                      <p>It counts the number of private methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Protected Fields (protectedFieldsQty)</a></h3>
+                      <p>It counts the number of protected fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Protected Methods (protectedMethodsQty)</a></h3>
+                      <p>It counts the number of protected methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box6 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Public Fields (publicFieldsQty)</a></h3>
+                      <p>It counts the number of public fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Public Methods (publicMethodsQty)</a></h3>
+                      <p>It counts the number of public methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Returns (returnQty)</a></h3>
+                      <p>It measures the number of return instructions.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Response for a Class (rfc)</a></h3>
+                      <p>It counts the number of unique method invocations in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Static Fields (staticFieldsQty)</a></h3>
+                      <p>It counts the number of static fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Static Methods (staticMethodsQty)</a></h3>
+                      <p>It counts the number of static methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box7 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of String Literals(stringLiteralsQty)</a></h3>
+                      <p>It computes the number of string literals in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Synchronized Fields(synchronizedFieldsQty)</a></h3>
+                      <p>It counts the number of synchronized fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Synchronized Methods (synchronizedMethodsQty)</a></h3>
+                      <p>It counts the number of synchronized methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Tight Class Cohesion (tcc)</a></h3>
+                      <p>It measures the cohesion of a class via direct connections between visible methods, two methods or their invocation trees access the same class variable.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Fields (totalFieldsQty)</a></h3>
+                      <p>It counts the number of total fields in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Methods (totalMethodsQty)</a></h3>
+                      <p>It counts the number of total methods in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- box8 -->
+          <div>
+
+              <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Try/Catches (tryCatchQty)</a></h3>
+                      <p>It counts the number of try/catches in a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Number of Unique Words(uniqueWordsQty)</a></h3>
+                      <p>It counts the number of unique words in the source code of a class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Quantity of Variables (variablesQty)</a></h3>
+                      <p>It measures the number of declared variables in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="unit-4 d-flex">
+                    <div>
+                      <h3><a href="#">Weight Method Class (wmc)</a></h3>
+                      <p>It counts the number of branch instructions in a class.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>        
+          
+
+        </div>
+
+
+
+
+        
+      </div>
+    </div>
+
+
+
 
     <div class="site-section block-13" id="section-references">
 
@@ -319,7 +1364,6 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
             <h2 class="mb-0 text-primary">References</h2>
-            <!-- <p class="color-black-opacity-5">Lorem ipsum dolor sit amet.</p> -->
           </div>
         </div>
       </div>
@@ -332,322 +1376,31 @@
             <img src="images/img_3.jpg" alt="Image" class="img-fluid rounded">
           </div> -->
           <div class="col-md-12" data-aos="fade-up">
-            <div class="text-left pb-1 border-primary mb-4">
-              <h2 class="text-primary">How to Cite</h2>
-            </div>
-
-            <p> If you want to use this dataset for a research, and need to cite it, the reference for this web site is: </p>
-
-            <ul class="ul-check list-unstyled success">
-              <li>Error minus sint nobis dolor</li>
-            </ul>
-
-Cesar Couto, Cristiano Maffort, Rogel Garcia, Marco Tulio Valente. COMETS: A Dataset for Empirical Research on Software Evolution using Source Code Metrics and Time Series Analysis. Software Engineering Notes, pages 1-3, January 2013.
-
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis. Consequatur modi rem, vero eos ipsam voluptas.</p>
-            <p class="mb-5">Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse velit veniam laborum quo obcaecati similique iusto delectus quasi!</p>
-            
-            <hr>
-
-            <ul class="ul-check list-unstyled success">
-              <li>Error minus sint nobis dolor</li>
-              <li>Voluptatum porro expedita labore esse</li>
-              <li>Voluptas unde sit pariatur earum</li>
-            </ul>
+            <!-- <div class="text-left pb-1 border-primary mb-4"> -->
+          <h2 class="text-left pb-1 mb-4 font-weight-bold">Omitted due to double-blind review</h2>
             
           </div>
           
         </div>
       </div>
 
-
-
-
-
-      <!-- <div class="owl-carousel nonloop-block-13"> -->
-
-
-
-        <!-- COMETS - Code metrics time series dataset -->
-<!-- Contact
-COMETS is currently maintained by the Applied Software Engineering Research Group (ASERG) of the Department of Computer Science, at the Federal Universal of Minas Gerais. -->
-
-<!-- Main contact: Prof. Marco Tulio Valente
-
-How to Cite
-If you use this dataset for your research, please reference the following paper:
-
-Cesar Couto, Cristiano Maffort, Rogel Garcia, Marco Tulio Valente. COMETS: A Dataset for Empirical Research on Software Evolution using Source Code Metrics and Time Series Analysis. Software Engineering Notes, pages 1-3, January 2013.
-Bibtex
-@article{comets,
-  author = {Cesar Couto and Cristiano Maffort and Rogel Garcia and Marco Tulio Valente},
-  title  = {COMETS: A Dataset for Empirical Research on Software Evolution using Source Code Metrics and Time
-            Series Analysis},
-  journal = {Software Engineering Notes},
-  year = {2013},
-  pages = {1--3},  
-}
-Related Datasets
-Marco D'Ambros Dataset (a bug prediction dataset)
-Helix (a software evolution dataset)
-Qualitas Corpus (a collection of Java systems)
-Papers Using COMETS
-Henrique Rocha; Cesar Couto; Cristiano Maffort; Rogel Garcia; Clarisse Simoes; Leonardo Passos; Marco Tulio Valente. Mining the Impact of Evolution Categories on Object-Oriented Metrics. Software Quality Journal, Springer. To appear. -->
-
-
-        <!-- <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Storage</h3>
-            </div>
-          </a>
-        </div> -->
-
-        <!-- <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Air Transports</h3>
-            </div>
-          </a>
-        </div> -->
-
-        <!-- <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Transports</h3>
-            </div>
-          </a>
-        </div> -->
-
-        <!-- <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Cargo Ship</h3>
-            </div>
-          </a>
-        </div> -->
-
-        <!-- <div>
-          <a href="#" class="unit-1 text-center">
-            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
-            <div class="unit-1-text">
-              <h3 class="unit-1-heading">Ware Housing</h3>
-            </div>
-          </a>
-        </div> -->
-
-
-      <!-- </div> -->
     </div>
 
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
 
-          <div class="col-md-7" data-aos="fade-up">
-            <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
-            <h2 class="text-white font-weight-light mb-5 h1">Watch The Video</h2>
-            
-          </div>
-        </div>
-      </div>
-    </div>  
-    
-    <div class="site-section border-bottom">
-      <div class="container">
-
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">Testimonials</h2>
-          </div>
-        </div>
-
-        <div class="slide-one-item home-slider owl-carousel">
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-3">
-                
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                <p class="author"> &mdash; John Trump</p>
-              </blockquote>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3">
-                
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                <p class="author"> &mdash; Roger Moore</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid mb-3">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                <p class="author"> &mdash; Ben Carson</p>
-              </blockquote>
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-              <figure class="mb-4">
-                <img src="images/person_5.jpg" alt="Image" class="img-fluid mb-3">
-              </figure>
-              <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                <p class="author"> &mdash; Jed Smith</p>
-              </blockquote>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section" id="section-blog">
+    <div class="site-section border-bottom bg-light" id="section-the-authors">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">Our Blog</h2>
-            <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-          </div>
-        </div>
-        <div class="row mb-5 align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="h-entry">
-              <a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
-              <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
-              <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="h-entry">
-              <a href="single.html"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a>
-              <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
-              <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="h-entry">
-              <a href="single.html"><img src="images/blog_3.jpg" alt="Image" class="img-fluid"></a>
-              <h2 class="font-size-regular"><a href="single.html">How Logistics Company Improve Spendings</a></h2>
-              <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
+            <h2 class="font-weight-light text-primary" data-aos="fade">The Authors</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
-            <p class="mb-0"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">View All Blog Posts</a></p>
-          </div>
+          <h2 class="text-left pb-1 mb-4 font-weight-bold">Omitted due to double-blind review</h2>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="section-contact">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light text-primary">Contact Us</h2>
-            <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-7 mb-5">
-
-            
-
-            <form action="#" class="p-5 bg-white">
-             
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
-                </div>
-              </div>
-
-  
-            </form>
-          </div>
-          <div class="col-md-5">
-            
-            <div class="p-4 mb-3 bg-white">
-              <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-
-              <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-
-              <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
-
-            </div>
-            
-            <div class="p-4 mb-3 bg-white">
-              <h3 class="h5 text-black mb-3">More Info</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
-              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Learn More</a></p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
   
     
     <footer class="site-footer">
@@ -664,9 +1417,9 @@ Henrique Rocha; Cesar Couto; Cristiano Maffort; Rogel Garcia; Clarisse Simoes; L
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Data</a></li>
+                  <li><a href="#">Metrics</a></li>
+                  <li><a href="#">References</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
